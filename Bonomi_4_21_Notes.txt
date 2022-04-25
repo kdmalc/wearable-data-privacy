@@ -1,0 +1,51 @@
+8-10 runs
+10 vectors in the attack
+sample 5 from the test set
+sample 5 from the training set
+IT IS IMPORTANT THAT THESE ARE RANDOM
+
+DO MULTIPLE RUNS
+
+Store the data in a dataframe
+For every run store, th, k, prec, recall, acc
+Can then use directly with Seaborn
+
+PLOT RESULTS WITH A 95% CONFIDENCE InteRVAL
+^ Can do this with built in function in Python
+
+MITIGATION STRATEGIES
+Generalize or apply pertrubations (DP)
+Two ways to do DP
+Dataset is very small, so just adding noise is gonna ruin the usuabliity of the data
+Thus, pertrub each individual data element
+1. Each real valued element, we add some Laplace noise, this will obfuscate the original record
+2. Local DP model --> This is what Apple/Google use, for mobile devices. There's a paper about it
+
+Then run the distance based attack
+
+Challenges we have run into
+- Mobile data is very diverse
+- We are only using 1 column of the data
+ -- Could genrelizae a mitigation
+ -- The activity of each column are correlated
+-> Solution: Learn the correleation between acticityies, Protect A and then use a statistical model to reconstruct 
+Post processing part, generating a new synthetic dataset
+REONCSTRUCT DEPENDENT ATTRIBUTES
+
+How to prioritize final days
+- Show data is quite unique
+- Show results of distance based attack, with multiple random runs
+- Evaluate mitigation stratgies
+- Read the paper, try to understand how the model is different from DP, how the setting in that paper is different/the same as ourpaper
+- Check with Brad is presentaiton is the final reu
+
+Sample at random (for the testing set) 5%, thus we are sharing the other 95%
+Take 5% from the training set to complement the testing set
+
+Attacker has access to clean data, but has to match it with the pertrubed dataset (the shared dataset is sanitized)
+
+Emphasize the motivations --> ALSO WHAT ARE OUR AIMS< how did we decompose the project, goals at every step
+Conclusions then open questions / future work
+
+SHOW THE MECHANISM SATISFIES DP --> Include a short proof in the final report
+
