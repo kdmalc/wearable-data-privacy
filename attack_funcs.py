@@ -4,7 +4,7 @@ import random
 from scipy.special import rel_entr
 
 
-def run_n_attacks(df, num_attacks, ths=[0,2,5], k_vec=[1,5,10,20,30], sample_size=2):
+def run_n_attacks(df, training_df, num_attacks, ths=[0,2,5], k_vec=[1,5,10,20,30], sample_size=2):
     fields = 'FairlyActiveMinutes'
     my_cols = ['Trial', 'Test_IDs', 'Threshold', 'K', 'Precision', 'Recall', 'Accuracy']
     res_df = pd.DataFrame(columns=my_cols)
@@ -14,7 +14,7 @@ def run_n_attacks(df, num_attacks, ths=[0,2,5], k_vec=[1,5,10,20,30], sample_siz
 
     user_dict = dict()
     for idx, user in enumerate(all_IDs):
-        temp_df = df.loc[df['Id'] == user]
+        temp_df = training_df.loc[training_df['Id'] == user]
         user_dict[user] = temp_df[fields].values
     ##########################################################
 
