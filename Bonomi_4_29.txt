@@ -1,0 +1,42 @@
+Go more in detail in the report
+
+Emphasize HOW THE DATA IS CURRENTLY USED and why more and more reseachersa re trying to use this data
+What are the privacy concerns, in the sense of uniqueness --> How to uniquely distnguish individuals
+Fine grained, longitutdal collected data
+GOAL 1 IS TO ASSESS THE PRIVACY RISK, UNIQUENESS
+
+From Slide 5
+Redesign to think about the application setting
+SHOW US LINKING FROM USER'S DATA TO A PUBLIC RESEARCH DATABASE
+
+Talk about the challenges and how we solved them
+K-anon - Include Dr. Malin's paper about k-anon bad with high dimensional data
+DP
+L-Diversity
+T-closeness
+Are these solutions applicable here?
+EMPHASIZE CHALLENGES WITH CURRENT METHODS
+
+Introduce the methods
+1. Uniqueness --> This is challenging because we have so many attributes
+	a) How we measured information of each attrbite
+	b) How we measured uniqueness
+2. How we plan to address privacy challenges, using DP
+	a) Challenge is limited amount of data
+	b) Used ideas of Telemetry paper
+
+CONCLUSIONS AND LIMITATIONS
+
+Supplement file
+- Talk about poitns Bonomi brought up in his BRR NB
+
+My project is more research as opposd to more applied
+
+Put some text together and send it to him early
+
+Says I am very smart, but I need to be more careful
+Very fast pace
+I say "whatever" too much
+Need to present in a convincing manner
+
+He said he thinks I feel forced, uncomfortable woorking with him
